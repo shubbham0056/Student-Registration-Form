@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="#f0f8ff">
+
+    <form>
+    <br>
+    <table border="0" cellpadding="10" cellspacing="0" align="center" bgcolor="white">
+        
+        <!-- Form Title -->
+        <tr bgcolor="#2f4f4f">
+            <td colspan="2" align="center">
+                <font color="white" size="5"><b>Student Registration Form</b></font>
+            </td>
+        </tr>
+
+        <!-- Personal Details Section -->
+        <tr bgcolor="#4682b4">
+            <td colspan="2" align="center">
+                <font color="white" size="4"><b>Personal Details</b></font>
+            </td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td width="200" align="right"><b>Full Name:</b></td>
+            <td><input type="text" name="fullname" size="30" placeholder="Enter your name" required></td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right"><b>Father's Name:</b></td>
+            <td><input type="text" name="fathername" size="30" placeholder="Enter father's name" required></td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Mother's Name:</b></td>
+            <td><input type="text" name="mothername" size="30" placeholder="Enter mother's name" required></td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right"><b>Date of Birth:</b></td>
+            <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Gender:</b></td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </td>
+        </tr>
+
+        <!-- Contact Details Section -->
+        <tr bgcolor="#4682b4">
+            <td colspan="2" align="center">
+                <font color="white" size="4"><b>Contact Details</b></font>
+            </td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right"><b>Email:</b></td>
+            <td><input type="email" name="email" size="30" placeholder="example@mail.com" required></td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Phone Number:</b></td>
+            <td><input type="tel" name="phone" size="30" placeholder="9876543210" required></td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right" valign="top"><b>Address:</b></td>
+            <td><textarea name="address" rows="3" cols="28" placeholder="Enter your address"></textarea></td>
+        </tr>
+
+        <!-- Academic Details Section -->
+        <tr bgcolor="#4682b4">
+            <td colspan="2" align="center">
+                <font color="white" size="4"><b>Academic Details</b></font>
+            </td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Course:</b></td>
+            <td>
+                <select name="course">
+                    <option value="">--Select--</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                    <option>B.Com</option>
+                    <option>M.Tech</option>
+                    <option>MBA</option>
+                </select>
+            </td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right"><b>Last Qualification:</b></td>
+            <td>
+                <select name="qualification">
+                    <option value="">--Select--</option>
+                    <option>High School</option>
+                    <option>Intermediate</option>
+                    <option>Diploma</option>
+                    <option>Graduation</option>
+                    <option>Post-Graduation</option>
+                </select>
+            </td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Percentage/Grade:</b></td>
+            <td><input type="text" name="grade" size="30" placeholder="e.g. 85% or A+"></td>
+        </tr>
+
+        <!-- Other Information Section -->
+        <tr bgcolor="#4682b4">
+            <td colspan="2" align="center">
+                <font color="white" size="4"><b>Other Information</b></font>
+            </td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right" valign="top"><b>Subjects Interested:</b></td>
+            <td>
+                <input type="checkbox" name="subjects" value="Maths"> Maths <br>
+                <input type="checkbox" name="subjects" value="Science"> Science <br>
+                <input type="checkbox" name="subjects" value="Computer"> Computer <br>
+                <input type="checkbox" name="subjects" value="Economics"> Economics
+            </td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right" valign="top"><b>Hobbies:</b></td>
+            <td>
+                <input type="checkbox" name="hobbies" value="Reading"> Reading <br>
+                <input type="checkbox" name="hobbies" value="Sports"> Sports <br>
+                <input type="checkbox" name="hobbies" value="Music"> Music <br>
+                <input type="checkbox" name="hobbies" value="Traveling"> Traveling
+            </td>
+        </tr>
+        <tr bgcolor="#f0faff">
+            <td align="right" valign="top"><b>Languages Known:</b></td>
+            <td>
+                <input type="checkbox" name="languages" value="English"> English <br>
+                <input type="checkbox" name="languages" value="Hindi"> Hindi <br>
+                <input type="checkbox" name="languages" value="Spanish"> Spanish <br>
+                <input type="checkbox" name="languages" value="French"> French <br>
+                <input type="checkbox" name="languages" value="Other"> Other
+            </td>
+        </tr>
+        <tr bgcolor="#e6f7ff">
+            <td align="right"><b>Upload Photo:</b></td>
+            <td><input type="file" name="photo" accept="image/*"></td>
+        </tr>
+
+        <!-- Terms & Buttons -->
+        <tr bgcolor="#f0faff">
+            <td></td>
+            <td><input type="checkbox" name="terms" required> I agree to the Terms & Conditions</td>
+        </tr>
+        <tr bgcolor="#2f4f4f">
+            <td colspan="2" align="center">
+                <input type="submit" value="Register" 
+                       style="background-color:#28a745; color:white; font-weight:bold; padding:6px 15px; border:none;">
+                &nbsp;
+                <input type="reset" value="Reset" 
+                       style="background-color:#dc3545; color:white; font-weight:bold; padding:6px 15px; border:none;">
+            </td>
+        </tr>
+
+    </table>
+    </form>
+
+</body>
+</html>
